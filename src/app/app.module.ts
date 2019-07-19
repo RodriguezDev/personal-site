@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppBorderComponent } from './app-border/app-border.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppBorderComponent
+    AppBorderComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
