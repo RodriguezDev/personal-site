@@ -1,13 +1,14 @@
 <app-border></app-border>
 
 <div id="body">
+  <h1 id="hello-world-label" class="animated fadeIn slow" [ngClass]="{'no-show' : spaceFromTop > 50}">Hello world</h1>
   <div id="left-feature-div" [ngClass]="{'full-size' : spaceFromTop > 50}">
-    <h1 id="hello-world-label" class="animated fadeIn slow" [ngClass]="{'no-show' : spaceFromTop > 50}">Hello world</h1>
+    
     <p id="scroll-label" class="animated fadeInUp slow" [ngClass]="{'no-display': spaceFromTop > 30}">SCROLL&nbsp;<i class="fas fa-arrow-down"></i></p>
 
     <div *ngIf="spaceFromTop > 50" id="top-content" class="animated fadeIn">
         <h3>Title</h3>
-        <p>Here is the body</p>
+        <p>Here is where there'll be some sort of body.</p>
     </div>
   </div>
 </div>
