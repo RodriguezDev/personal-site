@@ -7,8 +7,32 @@
     <p id="scroll-label" class="animated fadeInUp slow" [ngClass]="{'no-display': spaceFromTop > 30}">SCROLL&nbsp;<i class="fas fa-arrow-down"></i></p>
 
     <div *ngIf="spaceFromTop > 50" id="top-content" class="animated fadeIn">
-        <h3>Title</h3>
-        <p>Here is where there'll be some sort of body.</p>
+    <!--<div id="top-content" class="hidden animated fadeIn" [ngClass]="{'visible': spaceFromTop > 30}">-->
+        <h3 class="animated fadeInDown fast">I'm Chris Rodriguez</h3>
+        <div class="bar" [ngClass]="{'bar-larger': spaceFromTop > 60}"></div>
+        <p>Glad you decided to stop by</p>
+        <p>Take a look around</p>
+    </div>
+  </div>
+  <div id="projects-section">
+    <h2>Projects</h2>
+    <div class="bar" style="margin-bottom: 80px;"></div>
+
+    <div class="project right-align">
+      <div class="project-image-container">
+        <img src="../../assets/images/Screen Shot 2019-10-01 at 1.20.03 AM.png">
+      </div>
+      <div class="project-content-container">
+        <h3>LevelUp</h3>
+        <div class="project-description">
+          <p>A fully featured professional development tool. Offers a personalized list of objectives to complete, a portal to create and take tests, and fully featured admin tools.</p>
+        </div>
+        <ul>
+          <li>AngularJS</li>
+          <li>C#</li>
+          <li style="margin-right: 0;">Chart.js</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

@@ -46,6 +46,12 @@
 
             h3 {
                 font-size: 32px;
+                margin: 0;
+            }
+
+            p {
+                color: white;
+                margin: 4px 0;
             }
         }
 
@@ -61,5 +67,79 @@
         .no-display {
             bottom: -5vh !important;
         }
+
+        #projects-section {
+            padding: 5% 10%;
+
+            .project-image-container, .project-content-container {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .project-image-container {
+                width: 60%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .project-content-container {
+                width: 40%;
+
+                h3 {
+                    font-size: 36px;
+                }
+
+                .project-description {
+                    width: 120%;
+                    margin: 20px 0 20px -20%;
+                    background-color: #ffffff;
+                    padding: 25px;
+                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.19), 0 1px 2px 0 rgba(0, 0, 0, 0.18);
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                ul {
+                    list-style-type: none;
+                     li {
+                         display: inline-block;
+                         padding: 10px;
+                         margin: 0 12px;
+                     }
+                }
+            }
+        }
+
+        .right-align {
+            text-align: right;
+        }
     };
+
+    .visible {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: opacity 0.5s linear !important;
+    }
+
+    .hidden {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 0.5s, opacity 0.5s linear;
+    }
+
+    .bar {
+        height: 4px;
+        width: 100px;
+        margin: 20px 0;
+        background-color: black;
+        transition: all 1s ease;
+    }
+
+    .bar-larger {
+        width: 200px;
+    }
 }
